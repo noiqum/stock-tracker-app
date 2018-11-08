@@ -3,14 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import tachyons from 'tachyons';
 import Mainbutton from './Mainbutton';
+import App from './App' ;
 
 
-ReactDOM.render(
-	<div>
-	<Mainbutton buttonname={'Ekle'} src={'ekle.png'}/>
-	<Mainbutton buttonname={'Çıkar'} src= {'cikar.png'}/>
-	<Mainbutton buttonname={'Sil'} src={'sil.png'}/>
-	</div>
-, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 
