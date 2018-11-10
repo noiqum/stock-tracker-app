@@ -1,8 +1,22 @@
 import React from 'react';
 import Mainbutton from './Mainbutton';
 import SearchBox from './SearchBox';
+
+
+
+
 class App extends React.Component {
 
+constructor(){
+	super()
+	this.state ={
+		searchfield:'',
+	}
+}
+
+onsearchChange=(event)=>{
+	console.log(event.target.value);
+}
 render(){
 	return (
 		<div>
@@ -15,7 +29,7 @@ render(){
 				<p>açılır kapanır alan </p>
 			</div>
 			<div>
-				<SearchBox/>
+				<SearchBox searchChange={this.onsearchChange}/>
 			</div>
 		</div>
 		);
