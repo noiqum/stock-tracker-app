@@ -1,6 +1,9 @@
 import React from 'react';
 import Mainbutton from './Mainbutton';
 import SearchBox from './SearchBox';
+import './App.css';
+import Navigation from './Navigation';
+import Container from './Container';
 
 
 
@@ -11,6 +14,7 @@ constructor(){
 	super()
 	this.state ={
 		searchfield:'',
+		item:[],
 	}
 }
 
@@ -20,6 +24,7 @@ onsearchChange=(event)=>{
 render(){
 	return (
 		<div>
+			<Navigation/>
 			<div className="flex justify-around">
 				<Mainbutton buttonname={'Ekle'} src={'ekle.png'}/>
 				<Mainbutton buttonname={'Çıkar'} src= {'cikar.png'}/>
@@ -27,6 +32,7 @@ render(){
 			</div>
 			<div className="flex">
 				<p>açılır kapanır alan </p>
+				<Container/>
 			</div>
 			<div>
 				<SearchBox searchChange={this.onsearchChange}/>

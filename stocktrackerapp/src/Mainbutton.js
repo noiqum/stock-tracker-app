@@ -6,7 +6,7 @@ class Mainbutton extends React.Component {
 		return (
 			<div className="outline w-25 pa3 mr2 br4 grow shadow-5 bg-animate hover-bg-lightest-blue">	
 			<img src={this.props.src} />
-			<p>{this.props.buttonname}</p>
+			<p className='f2'>{this.props.buttonname}</p>
 			</div>
 			);
 	}
