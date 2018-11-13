@@ -11,7 +11,7 @@ render(props){
 				 placeholder='ürün ara'
 				 onChange={this.props.searchChange}
 				 />
-
+				 <button>Ara</button>
 			</div>
 
 		);
