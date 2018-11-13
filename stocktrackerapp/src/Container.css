@@ -1,0 +1,47 @@
+.ContainerEkle {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  font-family: 'Lato', sans-serif;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: #6DD5FA;
+  color: white;
+  box-shadow: 5px 5px 25px #000;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 1s;
+}
+.box1{
+	justify-content: center;
+	opacity: 1;
+  transform: translateX(45px);
+  transition: opacity 0.5s 2s, transform 0.5s 0.5s;
+}
+.box2{
+	opacity: 0;
+  transform: translateX(500px);
+  transition: opacity 0.5s 1s, transform 0.5s 1s;
+}
+.box:hover {
+	height: 400px;
+  width: 300px;
+  background-color: #ffa64d;
+  box-shadow: -5px 5px 25px #000;
+}
+.box:hover .box1 {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.box:hover .box2 {
+  opacity: 1;
+  transform: translateX(-100px);
+}

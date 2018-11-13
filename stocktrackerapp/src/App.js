@@ -23,9 +23,7 @@ constructor(){
 	}
 }
 
-onsearchChange =(event)=>{
-	console.log(event.target.value);
-}
+
 
 onClickEkle =(event)=>{
 	this.setState({click:'ekle'});
@@ -48,11 +46,11 @@ render(){
 				<Mainbutton buttonname={'Çıkar'} src= {'cikar.png'} onclick={this.onClickCikar}/>
 				<Mainbutton buttonname={'Sil'} src={'sil.png'} onclick={this.onClickSil}/>
 			</div>
-			<div className="flex">
+			<div className="flex justify-center pv5 tc">
 				<Container clicked={this.state.click}/>
 			</div>
 			<div>
-				<SearchBox searchChange={this.onsearchChange}/>
+				
 			</div>
 		</div>
 		);
