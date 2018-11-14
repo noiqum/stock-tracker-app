@@ -5,6 +5,7 @@ import './App.css';
 import Navigation from './Navigation';
 import Container from './Container';
 import Loader from './Loader';
+import Signin from './Signin';
 
 
 
@@ -50,7 +51,7 @@ render(){
 				<Container clicked={this.state.click}/>
 			</div>
 			<div>
-				
+			<Signin/>
 			</div>
 		</div>
 		);
